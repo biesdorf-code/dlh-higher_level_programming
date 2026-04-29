@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 
 
-def print_matrix_integer(matrix=[[]]):
-    for row in matrix:
-        for i, num in enumerate(row):
-            if i > 0:
-                print(" ", end="")
-            print("{:d}".format(num), end="")
-        print()
+def add_tuple(tuple_a=(), tuple_b=()):
+    a = tuple_a + (0, 0)
+    b = tuple_b + (0, 0)
+    return (a[0] + b[0], a[1] + b[1]))

@@ -24,7 +24,7 @@ def roman_to_int(roman_string):
         if current_val < next_val:
             total = total - current_val
         else:
-            total = total + currrent_val
+            total = total + current_val
 
     return total
 

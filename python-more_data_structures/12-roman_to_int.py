@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if not isinstance(roman_string, str):
+    if not isinstance(roman_string, str): 
         return 0
 
     # the 7 roman symbols
@@ -11,20 +11,19 @@ def roman_to_int(roman_string):
 
     total = 0
 
-    for i in range(len(roman_string)):
+    for i in range(len(roman_string)): 
         current_val = values[roman_string[i]]
 
         # Check if if the next character exists and is larger
-        if i + 1 < len(roman_string):
+        if i + 1 < len(roman_string): 
             next_val = values[roman_string[i + 1]]
         else:
             next_val = 0
 
         # subtract rule is if current is smaller than the next
-        if current_val < next_val:
+        if current_val < next_val: 
             total = total - current_val
         else:
             total = total + current_val
 
     return total
-

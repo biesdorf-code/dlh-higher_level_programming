@@ -16,7 +16,7 @@ def roman_to_int(roman_string):
 
         # Check if if the next character exists and is larger
         if i + 1 < len(roman_string):
-            next_val = values[toman_string[i + 1]]
+            next_val = values[roman_string[i + 1]]
         else:
             next_val = 0
 

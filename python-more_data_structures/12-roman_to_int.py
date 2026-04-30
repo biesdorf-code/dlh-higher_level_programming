@@ -1,29 +1,29 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if not isinstance(roman_string, str): 
+    if not isinstance(roman_string, str):
         return 0
 
-    # the 7 roman symbols
+    # the 7 symbols and their values
     values = {
-            'I': 1, 'V': 5, 'X':10, 'L':50,
-            'C':100, 'D':500, 'M': 1000
-            }
+        'I': 1, 'V': 5, 'X': 10, 'L': 50,
+        'C': 100, 'D': 500, 'M': 1000
+    }
 
     total = 0
 
-    for i in range(len(roman_string)): 
-        current_val = values[roman_string[i]]
+    for i in range(len(roman_string)):
+        current = values[roman_string[i]]
 
-        # Check if if the next character exists and is larger
-        if i + 1 < len(roman_string): 
+        # check if next character exists and is larger
+        if i + 1 < len(roman_string):
             next_val = values[roman_string[i + 1]]
         else:
             next_val = 0
 
-        # subtract rule is if current is smaller than the next
-        if current_val < next_val: 
-            total = total - current_val
+        # subtract rule: if current is smaller than next
+        if current < next_val:
+            total -= current
         else:
-            total = total + current_val
+            total += current
 
     return total

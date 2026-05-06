@@ -18,7 +18,7 @@ class Square:
         Args:
             size (int): is the desired size, 0 if unknown
         """
-        if type(size) != int:
+        if isinstance(size, int) is not True:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")

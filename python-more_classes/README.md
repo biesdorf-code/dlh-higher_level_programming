@@ -1,0 +1,1 @@
+This folder is about Project 2 of Week 3.

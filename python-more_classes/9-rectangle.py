@@ -74,7 +74,7 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """" Compares triangles, return the largest one, area. a selfless thing"""
+        """" Compares triangles, return the largest one, area"""
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
@@ -86,4 +86,4 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """returns a square sized RECTAGLE Object"""
-        return cls(size, size)  # using Rectangle(size,size) would not be inheritance friendly
+        return cls(size, size)  # using Rectangle(size,size) nope for inher.

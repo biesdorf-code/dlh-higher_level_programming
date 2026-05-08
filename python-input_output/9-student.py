@@ -12,5 +12,5 @@ class Student:
         self.age = age
 
     def to_json(self):
-        """returns a dictionary of student attributes"""
+        """returns a dictionary of student attributes, not JSON file"""
         return self.__dict__

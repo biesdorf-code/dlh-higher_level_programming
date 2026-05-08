@@ -11,7 +11,7 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs=[]):
+    def to_json(self, attrs=None):
         """returns a dictionary of student attributes, not JSON file"""
 
         if not isinstance(attrs, list):
